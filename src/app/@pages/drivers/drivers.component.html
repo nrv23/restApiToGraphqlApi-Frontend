@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead">
+    <tr>
+      <th scope="col">Cod.</th>
+      <th scope="col">Piloto</th>
+      <th scope="col">Fecha de Nacimiento</th>
+      <th scope="col">Nacionalidad</th>
+      <th scope="col">Número</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let d of drivers; let i = index;">
+      <th scope="row">{{ d.id }}</th>
+      <td>{{ d.name }}</td>
+      <td>{{ d.dateOfBirth }}</td>
+      <td>{{ d.nationality }}</td>
+      <td>{{ d.permanentNumber }}</td>
+    </tr>
+  </tbody>
+</table>
